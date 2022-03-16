@@ -14,7 +14,7 @@ import sqlite3
 import os
 from flask import g, send_from_directory
 from flask_login import login_required, login_user, current_user, login_manager, logout_user, UserMixin, LoginManager
-import tkinter
+
 
 
 
