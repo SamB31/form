@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body class="body">
+  
+  <title>Gaming Survey</title>
+  <div id="title">
+       <h1>Gaming Survey Form</h1>   
+     </div> <!--title-->
+  <h2>Thank you for taking the time to complete this survey</h2>   
+   <div id="container">
+    <div id="form-container">
+    <form>
+     <div id="input-form">
+        <label>Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" class="text-box" required><br><br>
+        <label>Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="text-box" DOMstring="" required><br><br>
+        <label>Age (optional)</label><br>
+        <input type="number" id="age" name="age" value="" placeholder="Age" min="18" max="99" class="text-box" required><br><br>
+        </div> <!--input-form-->
+     <div id="drop-down">
+       <label for="game" required>What is your favorite game?</label><br>
+       <select name="game" id="game" class="text-box" >
+         <option value="Select one">Select one</option>
+         <option value="Skyrim">Skyrim</option>
+         <option value="Terraria">Terraria</option>
+         <option value="Minecraft">Minecraft</option>
+         <option value="Fortnite">Fortnite</option>
+         <option value="Warzone">Warzone</option>
+       </select>
+       
+     </div> <!--drop-down--><br>
+      
+     
+     <div id="radio-form">
+       
+         <label>Would you recommend this game to a friend?</label><br>
+         <input type="radio" id="definitely" value="definitely" name="recommend">
+         <label for="definitely"> Definitely</label><br>
+         <input type="radio" id="maybe" value="maybe" name="recommend">
+         <label for="maybe"> Maybe</label> <br>
+         <input type="radio" id="Not sure" value="Not sure" name="recommend">
+         <label for="Not sure"> Not sure</label>
+       
+     </div> <!--radio-form--><br>
+     <div id="dropdown2">
+      <label for="game">How often do you play games?</label><br>
+       <select name="game" id="game" class="text-box" >
+         <option value="Select one">Select one</option>
+         <option value="Constantly">All the time</option>
+         <option value="Daily">Every day</option>
+         <option value="biDaily">Every other day</option>
+         <option value="Weekly">Once a week</option>
+         <option value="Monthly">Once a month</option>
+       </select>
+        
+     </div><!--dropdown2-->
+     <div id="check-form">
+       <p>Favorite types of games</p>
+       
+         <input type="checkbox" id="fps" value="fps">
+         <label for="fps">First person shooter</label><br>
+         <input type="checkbox" id="MMO" value="MMO">
+         <label for="MMO">MMO</label><br>
+         <input type="checkbox" id="Sandbox" value="Sandbox">
+         <label for="Sandbox">Sandbox</label><br>
+         <input type="checkbox" id="Looter shooter" value="Looter shooter">
+         <label for="Looter shooter">Looter shooter</label><br>
+         <input type="checkbox" id="RPG" value="RPG">
+         <label for="RPG">RPG</label>
+      
+     </div> <!--check-form--><br>
+     <div id="comment">
+      
+       <label>Any comments or suggestions?</label>
+         <textarea type="text" id="comments" placeholder="Enter your comments here..." class="comment" style="min-height: 100px;"></textarea>
+       
+     </div> <!--comment--><br>
+     <div id="submit">
+       
+         <a href="https://codepen.io/samb31/pen/dyMxYgr?editors=1000"><button class="submit">Submit</button></a>
+      
+     </div> <!--submit-->
+     </div></form> <!--form-container-->
+  <div> <!--container-->
+ 
+</body>
+</html>

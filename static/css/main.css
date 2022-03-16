@@ -1,0 +1,83 @@
+html{
+    background: linear-gradient(rgba(20, 75, 57, .3),rgba(20, 75, 57, .3)) , url(img/bball1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 120%;
+   
+  }
+  #container{
+    color:white;
+    background-color: rgba(20, 75, 57, 1);
+    font-family:Andale Mono, monospace;
+    border-radius: 5px;
+    padding-left:37px;
+    padding-right:37px;
+    padding-top:35px;
+    line-height:25px;   
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-bottom:50px;
+    max-width: 400px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  #title{
+    color:white;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+    margin-bottom:0px;
+    font-weight: 100;
+    font-size: 15px;
+    padding-top:6px;
+    margin-left: 35px;
+    margin-right: 35px;
+    
+  }
+  h2{
+    font-style:italic;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Andale Mono, monospace;
+    color: white;
+    text-align:center;
+    margin-top:-15px;
+    padding-bottom:5px;
+  }
+  p{
+    font-style:italic;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Andale Mono, monospace;
+    color: white;
+    text-align:center;
+    margin-top:-15px;
+    padding-bottom:5px;
+  }
+  .text-box{
+    width:100%;
+    height:30px;
+    border-radius: 5px;
+  }
+  .submit{
+    width:102%;
+    height: 35px;
+    background-color:rgba(46, 204, 113, 1);
+    color:white;
+    font-size: 17px;
+    border-radius:5px;
+  }
+  .comment{
+    resize:vertical;
+    width:100%;
+    height:100px;
+    border-radius: 5px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }

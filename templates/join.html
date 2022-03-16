@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body class="body">
+  
+  <title>3v3 Tournament Survey</title>
+  <div id="title">
+       <h1>Gaming Survey Form</h1>   
+     </div> <!--title-->
+  <h2>Thank you for taking the time to complete this survey</h2>   
+   <div id="container">
+    <div id="form-container">
+        <form method="post">
+            <div id="input-form">
+               <label>Name</label><br>
+               <input type="text" id="names" name="names" placeholder="Enter your name" class="text-box" required><br><br>
+               <label>Email</label><br>
+               <input type="email" id="emails" name="emails" placeholder="Enter your email" class="text-box" DOMstring="" required><br><br>
+               
+               
+                <label>Select your groups team name</label>
+                <select id="team_names" name="selected" placeholder="Select your groups team name" class="text-box" required><br><br>
+                  {% for team in teams %}
+                  
+                      <OPTION value="{{team[0]}}">{{team[0]}}</OPTION>  
+                  
+                  {% endfor %}
+                </select><br><br>
+               </div> <!--input-form-->
+            <div id="submit">
+       
+            <button class="submit">Submit</button>
+             
+        </div> <!--submit-->
+            </form>
+     </div> <!--form-container-->
+  <div> <!--container-->
+ 
+</body>
+</html>

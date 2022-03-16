@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body class="body">
+  
+  <title>3v3 Tournament Survey</title>
+  <div id="title">
+       <h1>3v3 Tournament Survey</h1>   
+     </div> <!--title-->
+  <h2>Thank you for taking the time to complete this survey</h2>   
+   <div id="container">
+    <div id="form-container">
+    <a href="{{ url_for('new') }}"><h2>Create new team</h2></a>
+    <a href="{{ url_for('join') }}"><h2>Join existing team</h2></a>
+     
+     </div> <!--form-container-->
+  <div> <!--container-->
+ 
+</body>
+</html>
