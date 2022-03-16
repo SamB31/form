@@ -11,7 +11,8 @@ from datetime import datetime
 from sqlalchemy import ForeignKey, select
 from datetime import datetime
 import sqlite3
-from flask import g
+import os
+from flask import g, send_from_directory
 from flask_login import login_required, login_user, current_user, login_manager, logout_user, UserMixin, LoginManager
 
 
@@ -63,10 +64,12 @@ admin.add_view(ModelView(Team_names, db.session))
 
   
 
-
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/icon.png')
 
     
-@app.route('/', methods=['POST','GET'])
+@app.route('/starthere', methods=['POST','GET'])
 def first():
     return render_template('first.html')
 
