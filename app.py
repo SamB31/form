@@ -22,7 +22,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
-app.config['SECRET_KEY'] = 'sdafwer3rw93ur9wu0er339d'
+app.config['SECRET_KEY'] = 'sdafwer3rw93ur9wu0er339de'
 
 admin = Admin(app, url = '/sakjhfajsewdsjasfe')
 #sakjhfajsewdsjasfe
