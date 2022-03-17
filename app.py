@@ -59,17 +59,8 @@ class Team_names(db.Model):
 admin.add_view(ModelView(Forms, db.session))
 admin.add_view(ModelView(Team_names, db.session))
 
-
-
-
-  
-
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/icon.png')
-
     
-@app.route('/starthere', methods=['POST','GET'])
+@app.route('/', methods=['POST','GET'])
 def first():
     return render_template('first.html')
 
