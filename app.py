@@ -30,7 +30,7 @@ class Forms(db.Model):
     __tablename__ = 'forms'  
     id = db.Column(db.Integer, primary_key = True)  
     names = db.Column(db.String(200), nullable = False)
-    emails = db.Column(db.String(200), unique = False)
+    emails = db.Column(db.String(200), unique = True)
     team_name_id = db.Column(db.Integer, db.ForeignKey('team_names.id'))
     
     def __repr__(self):
