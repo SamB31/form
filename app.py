@@ -18,7 +18,7 @@ from flask_login import login_required, login_user, current_user, login_manager,
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://zssrsxxoznzojf:fe2e8ba379540dc0e341c0e6c8ba2a36c3271b685849441b0e3aa8331e3fc898@ec2-34-206-15-27.compute-1.amazonaws.com:5432/d6ckuhvlf2b479'
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://rcdqcdmfmeberp:67f63b8a96386d3bd9de91be20894d010ba7248a6f94f0124628a1737bf2b2e8@ec2-52-44-209-165.compute-1.amazonaws.com:5432/d58rkhvovl2431'
 db = SQLAlchemy(app)
 app.config['SECRET_KEY'] = 'sdafwer3rw93ur9wu0er339de'
 admin = Admin(app, url = '/sakjhfajsewdsjasfe')
