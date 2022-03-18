@@ -16,9 +16,10 @@ from flask_login import login_required, login_user, current_user, login_manager,
 
 
 
-SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-app = Flask(__name__)
 
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI']= os.environ.get('DATABASE_URL')
+db = SQLAlchemy(app)
 app.config['SECRET_KEY'] = 'sdafwer3rw93ur9wu0er339de'
 admin = Admin(app, url = '/sakjhfajsewdsjasfe')
 #sakjhfajsewdsjasfe
