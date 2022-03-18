@@ -7,10 +7,10 @@ from wtforms import Form, BooleanField, StringField, PasswordField, validators
 from flask import Flask, redirect, render_template, session, url_for, request, flash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from sqlalchemy import ForeignKey, select
+from sqlalchemy import ForeignKey, select, create_engine
 from datetime import datetime
-import sqlite3
 import os
+
 from flask import g, send_from_directory
 from flask_login import login_required, login_user, current_user, login_manager, logout_user, UserMixin, LoginManager
 
@@ -18,13 +18,12 @@ from flask_login import login_required, login_user, current_user, login_manager,
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://postgres:Shane2107@localhost:5432/3v3'
 db = SQLAlchemy(app)
-
 app.config['SECRET_KEY'] = 'sdafwer3rw93ur9wu0er339de'
-
 admin = Admin(app, url = '/sakjhfajsewdsjasfe')
 #sakjhfajsewdsjasfe
+
 
       
 class Forms(db.Model):  
@@ -54,6 +53,7 @@ class Team_names(db.Model):
 
     def __init__(self, team_name):
         self.team_name = team_name  
+
 
 
 admin.add_view(ModelView(Forms, db.session))
