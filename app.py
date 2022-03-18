@@ -107,7 +107,7 @@ def join():
             
             db.session.add(adding)    
             db.session.commit()
-            return render_template('thankyou.html')   
+            return render_template('thankyou1.html')   
         except:
             return render_template('fail2.html')
              
